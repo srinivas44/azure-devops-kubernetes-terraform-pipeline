@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: NakSriniAgentPool
+  vmImage: agent_win
 
 steps:
 - script: echo Hello, world!
