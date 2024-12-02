@@ -3,7 +3,7 @@ trigger:
 
 pool:
   name: NakSriniAgentPool
-  vmImage: yyxxzz
+  vmImage: 'ubuntu-latest'
 
 stages:
 - stage: Build
