@@ -3,7 +3,7 @@ trigger:
 
 pool:
   name: NakSriniAgentPool
-  vmImage: agent_win
+  vmImage: yyxxzz
 
 steps:
 - script: echo Hello, world!
