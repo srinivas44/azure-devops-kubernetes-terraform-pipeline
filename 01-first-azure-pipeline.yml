@@ -3,17 +3,16 @@ trigger:
 
 pool:
   name: NakSriniAgentPool
-  vmImage: agent_win
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
 - script: hostname
-  displayName: 'printhostname'
+  displayName: 'print hostname'
 
 - script:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo ls
   displayName: 'Run a multi-line script'
