@@ -5,9 +5,13 @@ pool:
   name: NakSriniAgentPool
   vmImage: yyxxzz
 
+variables:
+  PATH: $(PATH):C:\Program Files\Git\git-bash.exe
+
 stages:
 - stage: Build
   jobs:
   - job: FirstJob
     steps:
+    - script: echo $PATH
     - bash: echo Build FirstJob
