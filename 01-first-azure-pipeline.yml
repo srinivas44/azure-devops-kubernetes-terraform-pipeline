@@ -6,7 +6,7 @@ pool:
   vmImage: yyxxzz
 
 variables:
-  PATH: $(PATH):C:\Program Files\Git\git-bash.exe
+  PATH: $(PATH):C:\Program Files\Git\bin\
 
 stages:
 - stage: Build
