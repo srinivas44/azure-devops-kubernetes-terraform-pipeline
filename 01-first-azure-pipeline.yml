@@ -10,5 +10,5 @@ stages:
   jobs:
   - job: FirstJob
     steps:
-    - script: echo $PATH
+    # - script: echo $PATH
     - bash: echo Build FirstJob
