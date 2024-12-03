@@ -21,4 +21,3 @@ steps:
         echo $(PipelineLevelVariable) && echo $(Build.BuildNumber) && echo $(Build.BuildId) && echo $(Build.SourceBranchName) && echo $(Build.SourcesDirectory)
         && echo $(System.DefaultWorkingDirectory) && ls -R $(System.DefaultWorkingDirectory)
         && echo $(Build.ArtifactStagingDirectory)
-      displayName: "Echos current shell and Run bash command with Unix-style path" 
