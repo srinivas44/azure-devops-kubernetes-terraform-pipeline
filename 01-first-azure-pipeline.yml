@@ -18,7 +18,8 @@ stages:
   jobs:
   - job: FirstJob
     steps:
-    - script: |
+    - bash: |
+        echo "Current shell is: $SHELL"
         export PATH="/c/Program Files/Git/bin:$PATH"
         echo "Build FirstJob"
       displayName: 'Run Build Script'
