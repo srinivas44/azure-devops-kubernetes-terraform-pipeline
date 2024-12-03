@@ -15,6 +15,6 @@ pool:
 
 
 steps:
-- script: |
-    bash -c "echo 'Hello from Bash'"
-  displayName: 'Run Bash script'
+-     script: |
+        "hostname && pwd"
+      displayName: "Run bash command with Unix-style path" 
