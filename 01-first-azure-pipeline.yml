@@ -13,12 +13,8 @@ pool:
 #     # - script: echo $PATH
 #     - bash: echo Build FirstJob
 
-stages:
-- stage: Build
-  jobs:
-  - job: FirstJob
-    steps:
-    - bash: |
-        export PATH="/c/Program Files/Git/bin:$PATH"
-        echo "Build FirstJob"
-      displayName: 'Run Build Script in Bash'
+
+steps:
+- script: |
+    bash -c "echo 'Hello from Bash'"
+  displayName: 'Run Bash script'
