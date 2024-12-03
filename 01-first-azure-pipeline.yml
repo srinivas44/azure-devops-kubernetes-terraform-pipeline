@@ -13,7 +13,8 @@ pool:
 #     # - script: echo $PATH
 #     - bash: echo Build FirstJob
 
-
 steps:
-- script: echo %ComSpec%
-  displayName: 'Check Command Prompt shell'
+-     script: |
+        echo %ComSpec%
+        "C:\Program Files\Git\bin\bash.exe" -c "cd /c/Program\ Files/Git/bin && pwd"
+      displayName: "Echos current shell and Run bash command with Unix-style path" 
