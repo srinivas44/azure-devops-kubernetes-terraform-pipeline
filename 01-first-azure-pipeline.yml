@@ -15,6 +15,10 @@ pool:
 
 
 steps:
--     script: |
-        "C:\Program Files\Git\bin\bash.exe" -c "cd /c/Program\ Files/Git/bin && pwd"
-      displayName: "Run bash command with Unix-style path" 
+- script: |
+    if ($env:SHELL) {
+      echo "Using shell: $env:SHELL"
+    } else {
+      echo "No SHELL environment variable found"
+    }
+  displayName: 'Check Shell Environment'
