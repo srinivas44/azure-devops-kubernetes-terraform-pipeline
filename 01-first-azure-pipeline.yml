@@ -5,7 +5,10 @@ pool:
   name: NakSriniAgentPool
   vmImage: yyxxzz
 
-steps:
--     script: |
-        "C:\Program Files\Git\bin\bash.exe" -c "cd /c/Program\ Files/Git/bin && pwd"
-      displayName: "Run bash command with Unix-style path" 
+stages:
+- stage: Build
+  jobs:
+  - job: FirstJob
+    steps:
+    # - script: echo $PATH
+    - bash: echo Build FirstJob
