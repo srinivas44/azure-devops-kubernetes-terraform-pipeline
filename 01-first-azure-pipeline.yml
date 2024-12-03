@@ -16,5 +16,5 @@ pool:
 
 steps:
 -     script: |
-        "hostname && pwd"
+        "C:\Program Files\Git\bin\bash.exe" -c "cd /c/Program\ Files/Git/bin && pwd"
       displayName: "Run bash command with Unix-style path" 
