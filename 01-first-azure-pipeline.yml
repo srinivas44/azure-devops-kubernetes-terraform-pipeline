@@ -5,10 +5,22 @@ pool:
   name: NakSriniAgentPool
   vmImage: yyxxzz
 
+# stages:
+# - stage: Build
+#   jobs:
+#   - job: FirstJob
+#     steps:
+#     # - script: echo $PATH
+#     - bash: echo Build FirstJob
+
 stages:
 - stage: Build
   jobs:
   - job: FirstJob
+    variables:
+      PATH: "/c/Program\\ Files/Git/bin:${PATH}"  # Correctly escape space
     steps:
-    # - script: echo $PATH
-    - bash: echo Build FirstJob
+    - bash: |
+        echo "Build FirstJob"
+        # Other bash commands can go here
+      displayName: 'Run Build Script'
