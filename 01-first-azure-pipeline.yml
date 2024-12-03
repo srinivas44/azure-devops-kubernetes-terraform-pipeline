@@ -17,10 +17,8 @@ stages:
 - stage: Build
   jobs:
   - job: FirstJob
-    variables:
-      PATH: "/c/Program\\ Files/Git/bin:${PATH}"  # Correctly escape space
     steps:
-    - bash: |
+    - script: |
+        export PATH="/c/Program Files/Git/bin:$PATH"
         echo "Build FirstJob"
-        # Other bash commands can go here
       displayName: 'Run Build Script'
