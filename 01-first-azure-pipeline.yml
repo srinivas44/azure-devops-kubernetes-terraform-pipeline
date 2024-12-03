@@ -1,9 +1,9 @@
 trigger:
-- master
+- main
 
 pool:
   name: NakSriniAgentPool
-  vmImage: 'ubuntu-latest'
+  vmImage: yyxxzz
 
 stages:
 - stage: Build
