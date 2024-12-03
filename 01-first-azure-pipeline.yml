@@ -15,10 +15,5 @@ pool:
 
 
 steps:
-- script: |
-    if ($env:SHELL) {
-      echo "Using shell: $env:SHELL"
-    } else {
-      echo "No SHELL environment variable found"
-    }
-  displayName: 'Check Shell Environment'
+- script: echo %ComSpec%
+  displayName: 'Check Command Prompt shell'
